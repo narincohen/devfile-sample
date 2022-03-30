@@ -52,7 +52,7 @@ app.use(require('pino-http')({logger: pino}));
 app.get('/', (req, res) => {
   // Use req.log (a `pino` instance) to log JSON:
   req.log.info({message: 'Hello EMET2!'});
-  res.send('Hello EME2T!');
+  res.send('אמת מחשוב');
 });
 
 app.get('*', (req, res) => {
